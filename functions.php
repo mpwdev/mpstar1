@@ -6,6 +6,12 @@
  * @package mpstar1
  */
 
+if ( ! defined( 'MPSTAR1_DIR_PATH' ) ) {
+	define( 'MPSTAR1_DIR_PATH', untrailingslashit( get_template_directory() ) );
+}
+
+require_once MPSTAR1_DIR_PATH . '/inc/helpers/autoloader.php';
+
 function mpstar1_enqueue_scripts() {
 
 	// register styles
