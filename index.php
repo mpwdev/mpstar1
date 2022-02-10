@@ -9,7 +9,7 @@ get_header();
 ?>
 
 <div class="content">
-content text here
+ <?php esc_html_e( 'Content Blog / from index.php ', 'mpstar1' ); ?>
 </div>
 
 
